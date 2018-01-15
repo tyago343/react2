@@ -524,7 +524,7 @@ return (
 
 ### Albumes del Artista
 
-1. Agrega una nueva ruta dentro del componente `Artist` donde el path sea `/artists/:id/albums`. Pero recuerda algo! Es una mala practica escribir rutas anidadas de esta forma, mejor es usar la propiedad `path` dentro del prop `match` de esta forma si nuestra ruta principal llegase a cambiar, esta se vería modificada automaticamente, y nos evitaría errores, así que usa: `\`${match.path}/albums\`` para generar la ruta.
+1. Agrega una nueva ruta dentro del componente `Artist` donde el path sea `/artists/:id/albums`. Pero recuerda algo! Es una mala practica escribir rutas anidadas de esta forma, mejor es usar la propiedad `path` dentro del prop `match` de esta forma si nuestra ruta principal llegase a cambiar, esta se vería modificada automaticamente, y nos evitaría errores, así que usa: `${match.path}/albums` para generar la ruta.
 2. Ahora para el Link vamos a hacer algo parecido. Nosotros no sabemos cual va a ser el valor del id en la url para poder crear el link harcodeado, por lo que vamos a usar `match.url` para generar correctamente la url anidada. 
 
 ### Canciones del Artista
