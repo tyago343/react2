@@ -15,7 +15,7 @@ export default ({ selectedSong, start, songs }) => (
         <tr className={selectedSong.id === song.id ? 'active' : ''} key={song.id}>
           <td>
             {selectedSong.id !== song.id ?
-              <button onClick={() => start(song)} className="btn btn-default btn-xs">
+              <button onClick={() => start(song, songs)} className="btn btn-default btn-xs">
                 <span className="glyphicon glyphicon-play"></span>
               </button> 
               :

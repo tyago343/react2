@@ -50,8 +50,8 @@ export default class Main extends React.Component {
     this.setState({ selectedAlbum: {} });
   }
 
-  start(song) {
-    this.setState({ selectedSong: song, playlist: this.state.selectedAlbum.songs })
+  start(song, songs) {
+    this.setState({ selectedSong: song, playlist: songs })
     this.loadSong(song.audioUrl);
   }
 
