@@ -3,14 +3,21 @@ import {Link} from 'react-router-dom'
 
 export default class Artists extends React.Component{
     
+componentDidMount(){
+    this.props.selectArtist(this.props.artistId)
+    
+}   
 render(){
-    //console.log(this.props)
-    return(
-            <div>
-                <h3>ARTIST NAME</h3>
-                <h4>ALBUMS</h4>
-                <h4>SONGS</h4>
-            </div>
+    const { selectedArtist } = this.props;
+    return (
+        
+      <div>
+        <h3>{ selectedArtist.name }</h3>
+        <ul className="nav nav-tabs">
+          <li><Link to=>ALBUMS</Link></li>
+          <li><Link to=>SONGS</Link></li>
+        </ul>
+        {/* Aquí vamos a armar nuestras rutas*/}
+      </div>
       )
-    }
 }
