@@ -9,7 +9,13 @@ export default ({ deselectAlbum }) => (
           <h4 className="menu-item active">
             <Link to="/albums" onClick={deselectAlbum}>ALBUMS</Link>
           </h4>
+          
+          <h4 className="menu-item">
+          <Link to='/artists'>ARTISTS</Link>
+          </h4>
+
         </section>
+        
       </sidebar>
     </div>
 );
